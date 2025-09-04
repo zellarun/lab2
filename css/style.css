@@ -27,3 +27,48 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
   background-color: #e9e9e9;
 }
+
+/* css to make the unordered list bulleted with stars 
+and aligns list better on pg. */
+.aboutMe-list {
+  list-style: none;
+  padding: 10px;
+}
+.aboutMe-list li {
+  margin: 10px 0;
+  padding-left: 20px;
+  position: relative;
+}
+.aboutMe-list li::before {
+  content: "★";
+  position: center;
+  left: 0;
+  color: #a42cb2;
+}
+
+/* gives background and box around photo */
+.about-photo {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.4);
+  max-width: 450px;
+  margin: 2px auto;
+}
+
+/* makes the header center and gives it a little more spice :) */
+h1 {
+  text-align: center;
+  font-size: 50px;
+  position: relative;
+}
+h1::after {
+  content: "";
+  display: block;
+  margin: 0.5px auto 0;
+  width: 60px;
+  height: 3px;
+  background: #60a5fa;
+  border-radius: 2px;
+}
+
